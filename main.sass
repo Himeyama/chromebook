@@ -1,0 +1,61 @@
+---
+---
+
+html
+    body
+        font-family: Noto Sans CJK JP
+
+        .window
+            box-shadow: rgb(51, 51, 51) 8px 8px 12px 0px !important
+            &.noactive
+                color: #fafafa
+
+            .winTitle
+                background-color: #cf2c2a !important
+                border-radius: unset
+                border-top: unset
+                height: 32px
+
+                .winTitleText
+                    text-align: left
+                    padding-left: 8px
+                    line-height: 32px
+
+                .winCloseBtn
+                    background: url("close_btn.svg") no-repeat center
+                    top: 6px
+                    &:hover
+                        background: url("close_btn.svg") no-repeat center transparent
+
+            .winContents
+                background-color: #f0f0f0 !important
+                color: #1a1a1a
+                border: solid 3px #cf2c2a
+
+                .exc_mark
+                    background: url("exc_mark.svg") no-repeat
+                    height: 64px
+                    background-size: 100% 100%
+                    width: 64px
+                    display: inline-block
+                    vertical-align: top
+                
+                .err_msg
+                    display: inline-block
+                    width: calc(100% - 68px)
+                    h1
+                        font-weight: 500
+                        margin: 0px 0 8px 0
+                    .error_details
+                        margin: 16px 0
+                        p
+                            margin: 4px 0
+                            font-size: 0.6em
+                    button
+                        width: 80px
+                        margin: unset
+                        padding: unset
+                        border: solid 2px
+                        border-color: #fafafa #ddd #ddd #fafafa
+                        margin-left: 92px
+                        margin-top: 8px
